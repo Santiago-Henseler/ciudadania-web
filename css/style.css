@@ -1,19 +1,8 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: SPONDON IT
-Author E-mail: info@spondonit.com
+#header{
+  background-color: red !important;
+  color: white !important;
+}
 
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
----------------------------------------------------- */
-/*=====================================================================
-@Template Name: Medicare Medical
-@Author: Naim LAsker
-@Developed By: Naim LAsker
-
-
-=====================================================================*/
 /*----------------------------------------------------*/
 /*font Variables*/
 /*Color Variables*/
@@ -344,7 +333,7 @@ button:focus {
       .header_area .navbar .nav .nav-item .nav-link {
         font: 600 12px/80px "Raleway", sans-serif;
         text-transform: uppercase;
-        color: #222222;
+        color: white !important;
         padding: 0px;
         display: inline-block; }
         .header_area .navbar .nav .nav-item .nav-link:after {
@@ -435,7 +424,7 @@ button:focus {
       font-size: 12px;
       line-height: 60px;
       display: inline-block;
-      color: #222222;
+      color: white !important;
       padding-left: 30px; }
       @media (max-width: 991px) {
         .header_area .navbar .search {
@@ -531,7 +520,7 @@ button:focus {
       .header-top .nice-select .list .option {
         display: block;
         margin: 0;
-        color: #000000;
+        color: white;
         padding-left: 10px; }
   .header-top .header-top-right {
     text-align: right; }
@@ -564,7 +553,7 @@ button:focus {
     position: absolute; }
 
   .header_area .navbar {
-    background: #f13d80; }
+    background: red; }
     .header_area .navbar .navbar-nav .social-icons {
       margin-top: 20px; }
 
@@ -627,7 +616,7 @@ button:focus {
   .header_area .navbar .nav .nav-item {
     margin-right: 0px; }
     .header_area .navbar .nav .nav-item.active .nav-link, .header_area .navbar .nav .nav-item:hover .nav-link {
-      color: #000; }
+      color:white; }
 
   .header_area + section, .header_area + row, .header_area + div {
     margin-top: 0; }
