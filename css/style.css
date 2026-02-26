@@ -1,6 +1,11 @@
 #header{
-  background-color: red !important;
+  background: #C93135 !important;
   color: white !important;
+}
+
+#Servicios{
+  background: #f4f8ff !important;
+  color: #000 !important;
 }
 
 /*----------------------------------------------------*/
@@ -82,6 +87,7 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
+  background-color: red !important;
   padding: 120px 0; }
   @media (max-width: 991px) {
     .section_gap {
@@ -108,10 +114,12 @@ button:focus {
   text-align: center;
   margin-bottom: 75px; }
   .main_title h1 {
+    color: #000 !important;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 15px; }
   .main_title p {
+    color: #000 !important;
     font-size: 14px;
     margin-bottom: 0px;
     font-weight: 300; }
@@ -120,7 +128,7 @@ button:focus {
 ============================================================================================ */
 /* Start Gradient Area css
 ============================================================================================ */
-.gradient-bg, .primary-btn:after, #search_input_box, .single_feature:hover, .about-area .about-inner .single-success:hover, .service-area, .categories_post:hover .categories_details, .blog_right_sidebar .widget_title, .blog_right_sidebar .search_widget .input-group .form-control, .blog_right_sidebar .newsletter_widget .bbtns, .blog_right_sidebar .tag_cloud_widget ul li a:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .contact_form .primary-btn, .single-footer-widget .click-btn {
+.gradient-bg, .primary-btn:after, #search_input_box, .single_feature:hover, .about-area .about-inner .single-success:hover, .categories_post:hover .categories_details, .blog_right_sidebar .widget_title, .blog_right_sidebar .search_widget .input-group .form-control, .blog_right_sidebar .newsletter_widget .bbtns, .blog_right_sidebar .tag_cloud_widget ul li a:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .contact_form .primary-btn, .single-footer-widget .click-btn {
   background: -webkit-linear-gradient(90deg, #f13d80 0%, #f48464 100%);
   background: -moz-linear-gradient(90deg, #f13d80 0%, #f48464 100%);
   background: -ms-linear-gradient(90deg, #f13d80 0%, #f48464 100%);
@@ -437,7 +445,7 @@ button:focus {
     top: -70px;
     left: 0;
     right: 0;
-    background: #ffffff;
+    background: #C93135;
     -webkit-transform: translateY(70px);
     -moz-transform: translateY(70px);
     -ms-transform: translateY(70px);
@@ -954,12 +962,12 @@ button:focus {
   .service-area .col-lg-4.col-md-6:last-child .single-service {
     margin-bottom: 0; }
   .service-area .main_title {
-    color: #fff; }
+    color: black; }
     .service-area .main_title h1 {
-      color: #fff; }
+      color: black; }
 
 .single-service {
-  color: #fff;
+  color: black;
   margin-bottom: 30px; }
   .single-service .service-thumb {
     position: relative;
@@ -989,7 +997,7 @@ button:focus {
     font-size: 18px;
     margin: 20px 0 15px; }
     .single-service h5 a {
-      color: #fff; }
+      color: black; }
   .single-service:hover .service-thumb:before {
     left: -110%;
     top: 15px; }
