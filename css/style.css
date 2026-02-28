@@ -8,6 +8,88 @@
   color: #000 !important;
 }
 
+.carousel-wrapper {
+  position: relative;
+  max-width: 630px;
+  margin: auto;
+  z-index: 2;
+  overflow: hidden;
+  
+}
+
+.carousel {
+  position: relative;
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+
+  transition: all 0.4s ease;
+}
+
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  background: #f1f5f9;
+  border-radius: 2px;
+}
+
+.testimonial {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(194, 44, 44, 0.6);
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.single_feature:hover{
+  background: red !important;
+}
+
+.primary-btn:hover{
+  background: red !important;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c8102e; /* rojo estilo polaco */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.single-service img{
+  height: 400px;
+}
+
 /*----------------------------------------------------*/
 /*font Variables*/
 /*Color Variables*/
@@ -128,7 +210,7 @@ button:focus {
 ============================================================================================ */
 /* Start Gradient Area css
 ============================================================================================ */
-.gradient-bg, .primary-btn:after, #search_input_box, .single_feature:hover, .about-area .about-inner .single-success:hover, .categories_post:hover .categories_details, .blog_right_sidebar .widget_title, .blog_right_sidebar .search_widget .input-group .form-control, .blog_right_sidebar .newsletter_widget .bbtns, .blog_right_sidebar .tag_cloud_widget ul li a:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .contact_form .primary-btn, .single-footer-widget .click-btn {
+.gradient-bg, #search_input_box, .about-area .about-inner .single-success:hover, .categories_post:hover .categories_details, .blog_right_sidebar .widget_title, .blog_right_sidebar .search_widget .input-group .form-control, .blog_right_sidebar .newsletter_widget .bbtns, .blog_right_sidebar .tag_cloud_widget ul li a:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .contact_form .primary-btn, .single-footer-widget .click-btn {
   background: -webkit-linear-gradient(90deg, #f13d80 0%, #f48464 100%);
   background: -moz-linear-gradient(90deg, #f13d80 0%, #f48464 100%);
   background: -ms-linear-gradient(90deg, #f13d80 0%, #f48464 100%);
