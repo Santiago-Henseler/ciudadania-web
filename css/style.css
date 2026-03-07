@@ -18,7 +18,7 @@ body{
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  z-index: 100;
+  z-index: 10000;
 }
 
 .whatsapp-icon {
@@ -67,6 +67,16 @@ body{
   min-width: 100%;
   position: relative;
 }
+
+.slidesText{
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slideText{
+  min-width: 100%;
+  position: relative;
+} 
 
 .slide img {
   width: 100%;
@@ -347,7 +357,7 @@ button:focus {
 ============================================================================================ */
 .main_title {
   text-align: center;
-  margin-bottom: 75px; }
+  margin-bottom: 50px; }
   .main_title h1 {
     color: #000 !important;
     font-size: 36px;
@@ -870,11 +880,11 @@ button:focus {
   /* End Main Menu Area css*/ }
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
-/* Home Banner Area css
+/* Home Banner Area css  img/banner/home-banner.jpg
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
+  background: url(../imagenes/inicio1.jpeg) no-repeat scroll center center;
   background-size: cover; }
   .home_banner_area.overlay:after {
     background: #000;
@@ -1006,7 +1016,7 @@ button:focus {
     .features_area {
       margin-top: 80px; } }
   .features_area .counter_wrapper {
-    background: #f4f8ff;
+    background: #D6D3D1;
     margin-left: 0;
     margin-right: 0;
     padding: 30px 15px; }
