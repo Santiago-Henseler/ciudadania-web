@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 body{
   overflow-x: hidden;
 }
@@ -5,6 +9,14 @@ body{
 #header{
   background: #C93135 !important;
   color: white !important;
+}
+
+p{
+  font-family: "Open Sans", sans-serif !important;
+}
+
+h1, h1{
+  font-family: "Playfair Display", serif  !important;
 }
 
 .whatsapp {
@@ -87,6 +99,10 @@ body{
   border-radius: 2px;
 }
 
+.testimonio{
+  background: #f4f8ff !important;
+}
+
 .testimonial {
   position: absolute;
   bottom: 20px;
@@ -123,6 +139,32 @@ button {
 .single-service img{
   height: 400px;
 }
+
+.benefit-card{
+  background:white;
+  padding:30px;
+  border-radius:8px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  height:100%;
+  transition:0.3s;
+  }
+  
+  .benefit-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
+  }
+  
+  .benefit-card h4{
+  font-size:18px;
+  margin-bottom:12px;
+  color:#c8102e;
+  }
+  
+  .benefit-card p{
+  font-size:15px;
+  line-height:1.6;
+  margin:0;
+  }
 
 /*--------------------------------------------------------------
 # Contact Section

@@ -43,7 +43,7 @@
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="#nosotros">Sobre nosotros</a></li>
 							<li class="nav-item"><a class="nav-link" href="#Servicios">Servicios</a></li>
-							<li class="nav-item"><a class="nav-link" href="#nosotros">Beneficios</a></li>
+							<li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
 							<li class="nav-item"><a class="nav-link" href="#nosotros">Nuestros clientes</a></li>
 							<li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
 						</ul>
@@ -80,7 +80,7 @@
 						<p>
 							Más de 25 años acompañando a familias en el proceso de obtener su ciudadanía polaca y acceder a nuevas oportunidades en Europa.
 						</p>
-						<a class="primary-btn text-uppercase" href="#">Analizar mi caso</a>
+						<a class="primary-btn text-uppercase" href="encuesta.html">Analizar mi caso</a>
 					</div>
 				</div>
 			</div>
@@ -143,6 +143,41 @@
 			</div>
 		</div>
 	</section>
+	<script>
+		const counters = document.querySelectorAll('.counter');
+		
+		const observer = new IntersectionObserver((entries, obs) => {
+		  entries.forEach(entry => {
+			if (!entry.isIntersecting) return;
+		
+			const counter = entry.target;
+			const target = +counter.innerText;
+			let count = 0;
+			const speed = 200;
+		
+			const updateCount = () => {
+			  const increment = target / speed;
+		
+			  if (count < target) {
+				count += increment;
+				counter.innerText = Math.ceil(count);
+				requestAnimationFrame(updateCount);
+			  } else {
+				counter.innerText = target;
+			  }
+			};
+		
+			updateCount();
+			obs.unobserve(counter); // solo una vez
+		  });
+		}, { threshold: 0.5 });
+		
+		counters.forEach(counter => observer.observe(counter));
+		</script>
+
+
+
+
 	<br>
 	<section class="service-area-2" id="nosotros">
 		<div class="container">
@@ -240,11 +275,116 @@
 			</div>
 		</div>
 	</section>
+	<section class="benefits-area" id="beneficios">
+		<div class="container">
+	
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h1>Beneficios de la Ciudadanía Polaca</h1>
+						<p>Accedé a oportunidades únicas en Europa y el mundo.</p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="row">
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>🇪🇺 Acceso pleno a la Unión Europea</h4>
+						<p>Disfrutá de todos los derechos y beneficios de ser ciudadano europeo.</p>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>🌍 Vivir, trabajar o emprender en Europa</h4>
+						<p>Circulación y residencia libre en los 27 países de la UE sin necesidad de visas.</p>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>🎓 Educación de primer nivel</h4>
+						<p>Ingreso a universidades europeas con matrículas preferenciales y mayores oportunidades académicas.</p>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>✈️ Pasaporte europeo</h4>
+						<p>Uno de los pasaportes más prestigiosos del mundo con acceso simplificado a numerosos destinos.</p>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>👨‍👩‍👧 Transmisión a tus hijos</h4>
+						<p>La ciudadanía polaca se hereda, permitiendo que futuras generaciones accedan a estos beneficios.</p>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>🛡 Seguridad jurídica</h4>
+						<p>Acceso a derechos, protección consular y amparo legal de cualquier país de la Unión Europea.</p>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>💼 Crear empresas en la UE</h4>
+						<p>Facilidad para emprender, acceder a créditos europeos y operar sin barreras internas.</p>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>🏥 Sistemas de salud europeos</h4>
+						<p>Acceso a atención médica de alta calidad con beneficios para ciudadanos europeos.</p>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>💰 Mejores oportunidades laborales</h4>
+						<p>Acceso a mercados laborales más amplios y con mejores condiciones económicas.</p>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>🏡 Comprar propiedades</h4>
+						<p>Posibilidad de adquirir inmuebles en Europa sin restricciones para extranjeros.</p>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>🔄 Libertad total de movilidad</h4>
+						<p>Vivir, estudiar o trabajar en cualquier país de Europa de forma legal y permanente.</p>
+					</div>
+				</div>
+	
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="benefit-card">
+						<h4>🌐 Doble ciudadanía</h4>
+						<p>Podés mantener tu ciudadanía argentina y sumar la europea sin perder derechos.</p>
+					</div>
+				</div>
+	
+			</div>
+	
+		</div>
+	</section>
+	<br>
 
 	<section class="testimonio">
+		<br>
 		<div class="row justify-content-center">
 			<div class="col-lg-7">
 				<div class="main_title">
+					<br>
 					<h1>Nuestros clientes</h1>
 				</div>
 			</div>
@@ -408,7 +548,8 @@
 				</div>
 			</div>
 		</div>
-		
+		<br>
+		<br>
 	</section>
 
 	<script>
@@ -439,7 +580,7 @@
 
 		setInterval(autoSlide, 4000);
 	  </script>
-	<br>
+	
 <section id="contacto"  class="contacto">
 	<div class="container" data-aos="fade-up" data-aos-delay="100">
 		<div class="section-header">
@@ -541,8 +682,6 @@
 	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
 	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-	<script src="vendors/counter-up/jquery.counterup.js"></script>
 	<script src="js/mail-script.js"></script>
 	<!--gmaps Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
