@@ -140,6 +140,10 @@ button {
   height: 400px;
 }
 
+#beneficios {
+  margin-top: -50px; /* opcional */
+}
+
 .benefit-card{
   background:white;
   padding:30px;
@@ -373,6 +377,10 @@ button:focus {
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+#Servicios.section_gap {
+  padding-top: 40px !important;
+}
+
 .section_gap {
   background-color: red !important;
   padding: 120px 0; }
